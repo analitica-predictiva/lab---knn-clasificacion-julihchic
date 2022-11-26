@@ -21,7 +21,7 @@ def pregunta_01():
     X = df.drop("party", axis=1).values
 
     # Importe el transformador OrdinalEncoder
-    from sklearn_preprocessing import OrdinalEncoder
+    from sklearn.preprocessing import OrdinalEncoder
 
     # Transforme las variables de entrada usando fit_transform
     X = OrdinalEncoder().fit_transform(X)
@@ -55,7 +55,7 @@ def pregunta_02():
     X = df.drop("party", axis=1)
 
     # Importe el transformador OrdinalEncoder
-    from sklearn_preprocessing import OrdinalEncoder
+    from sklearn.preprocessing import OrdinalEncoder
 
     # Transforme las variables de entrada usando fit_transform
     X = OrdinalEncoder().fit_transform(X)
